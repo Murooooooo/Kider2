@@ -1,0 +1,38 @@
+﻿@model List<Teacher>
+<div class="container">
+
+    <a class="btn btn-success" asp-action="create">Create</a>
+    <table class="table table-dark table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">PhotoUrl</th>
+                <th scope="col">Name</th>
+                <th scope="col">Duty</th>
+                <th scope="col">Action</th>
+        
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    
+                    <td>@item.Title</td>
+                    <td>@item.Description</td>
+                    <td><img src="~/images/@item.PhotoUrl"></td>
+                    <td>@item.Name</td>
+                    <td>@item.Duty</td>
+                    <td>
+                        <a class="btn btn-warning">Edit</a>
+                        <a class="btn btn-danger">Update</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,26 @@
+﻿@model Teacher
+<div class="container">
+    <div class="row">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Title">Title</label>
+                <input asp-for="Title" type="text" class="form-control" placeholder="Enter Title">
+            </div>  <div class="form-group">
+                <label asp-for="Description">Description</label>
+                <input asp-for="Description" type="text" class="form-control" placeholder="Enter Desciption">
+            </div>  <div class="form-group">
+                <label asp-for="PhotoUrl">Photo</label>
+                <input name="file" type="file" class="form-control" placeholder="Enter Photo">
+            </div>  <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" type="text" class="form-control" placeholder="Enter Name">
+            </div>  <div class="form-group">
+                <label asp-for="Duty">Duty</label>
+                <input asp-for="Duty" type="text" class="form-control" placeholder="Enter Duty">
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div>
