@@ -14,7 +14,7 @@ namespace Kider2
             builder.Services.AddRazorPages();
            
             builder.Services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("Msi")));
 
             var app = builder.Build();
 

@@ -22,12 +22,12 @@
                     
                     <td>@item.Title</td>
                     <td>@item.Description</td>
-                    <td><img src="~/images/@item.PhotoUrl"></td>
+                    <td><img width="200" src="@item.PhotoUrl"></td>
                     <td>@item.Name</td>
                     <td>@item.Duty</td>
                     <td>
-                        <a class="btn btn-warning">Edit</a>
-                        <a class="btn btn-danger">Update</a>
+                        <a asp-action="edit" asp-route-id="@item.Id" class="btn btn-warning">Edit</a>
+                        <a asp-action="delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             }
